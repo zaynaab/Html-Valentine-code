@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Will You Be My Valentine?</title>
+</head>
+<body>
+    <div class="heart"></div>
+    <button id="yes-button">Yes</button>
+    <button id="no-button">No</button>
+
+    <script>
+        const yesButton = document.getElementById('yes-button');
+        const noButton = document.getElementById('no-button');
+
+        yesButton.addEventListener('click', () => {
+            // Blow hearts and balloons (you can customize this part)
+            // For simplicity, let's just create an alert:
+            alert("💖 Happy Valentine's Day! 💖");
+        });
+
+        noButton.addEventListener('mouseover', () => {
+            // Randomly move the No button within the viewport
+            noButton.style.left = Math.random() * 80 + 'vw';
+            noButton.style.top = Math.random() * 80 + 'vh';
+        });
+    </script>
+</body>
+</html>
